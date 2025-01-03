@@ -4,6 +4,19 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Trump's Presidency</title>
+    <meta name="description" content="How long has Trump been president, and what actions has he taken?">
+    <meta property="og:url" content="https://since-trump.com">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Since Trump">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:title" content="Trump's Presidency">
+    <meta name="twitter:description" content="How long has Trump been president, and what actions has he taken?">
+    <meta name="twitter:url" content="https://since-trump.com">
+
+    <link rel="canonical" href="https://since-trump.com">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -82,6 +95,46 @@
                 font-size: 1.8rem;
             }
         }
+
+        .social-share-buttons {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .social-button {
+            display: inline-block;
+            margin: 3px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .social-button img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 0px;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+        .twitter {
+            background-color: #000;
+            color: white;
+        }
+        .linkedin {
+            background-color: #0077b5;
+            color: white;
+        }
+        .whatsapp {
+            background-color: #25d366;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +153,31 @@
     <li>We now know humans never set foot on the Moon</li>
     <li id="president">Trump is the new president of USA</li>
 </ul>
+
+<div class="social-share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://since-trump.com" target="_blank"
+       class="social-button facebook">
+        <img decoding="async"
+             src="https://platform-cdn.sharethis.com/img/facebook.svg?&amp;auto=compressq=1q=75&amp;auto=compress&amp;w=100"
+             loading="lazy">
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https://since-trump.com&text=How%20long%20has%20Trump%20been%20president%2C%20and%20what%20actions%20has%20he%20taken%3F"
+       target="_blank" class="social-button twitter">
+        <img decoding="async" src="https://platform-cdn.sharethis.com/img/twitter.svg" loading="lazy">
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://since-trump.com&title=Trump%27s%20Presidency&summary=How%20long%20has%20Trump%20been%20president%2C%20and%20what%20actions%20has%20he%20taken%3F"
+       target="_blank" class="social-button linkedin">
+        <img decoding="async"
+             src="https://platform-cdn.sharethis.com/img/linkedin.svg?&amp;auto=compressq=1q=75&amp;auto=compress&amp;w=100"
+             loading="lazy">
+    </a>
+    <a href="https://api.whatsapp.com/send?text=How%20long%20has%20Trump%20been%20president%2C%20and%20what%20actions%20has%20he%20taken%3F%20https://since-trump.com"
+       target="_blank" class="social-button whatsapp">
+        <img decoding="async"
+             src="https://platform-cdn.sharethis.com/img/whatsapp.svg?&amp;auto=compressq=1q=75&amp;auto=compress&amp;w=100"
+             loading="lazy">
+    </a>
+</div>
 
 <script>
     const startDate = new Date("2025-01-20");
