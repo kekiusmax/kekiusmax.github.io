@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Trump's Presidency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2f;
+            color: #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        li {
+            background: #2e2e4d;
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #ff6b6b;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        li::before {
+            content: "\2716";
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+        }
+
+        li.checked {
+            border-left-color: #6bff6b;
+        }
+
+        li.checked::before {
+            content: "\2714";
+            color: #6bff6b;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            li {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            li {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="title">Trump's Presidency</h1>
+    <h2>To-do list</h2>
+</header>
+<ul>
+    <li>Airplanes no longer spray substances into the atmosphere</li>
+    <li>The deep state has been exposed and its members arrested</li>
+    <li>We have real photos of the flat Earth</li>
+    <li>The real perpetrators of 9/11 have been brought to justice</li>
+    <li>All children trapped for adrenochrome extraction have been freed</li>
+    <li>Microchips in vaccines have been neutralized</li>
+    <li>Global warming no longer exists after exposing the hoax</li>
+    <li>We now know humans never set foot on the Moon</li>
+    <li id="president">Trump is the new president of USA</li>
+</ul>
+
+<script>
+    const startDate = new Date("2025-01-20");
+    const today = new Date();
+    const daysInOffice = Math.floor(
+        (today - startDate) / (1000 * 60 * 60 * 24)
+    );
+    if (daysInOffice < -1) {
+        const remain = -daysInOffice;
+        document.getElementById('title').textContent = 'Trump will be president in ' + remain + ' days.';
+    } else if (daysInOffice === -1) {
+        document.getElementById('title').textContent = 'Trump will be president tomorrow.';
+    } else if (daysInOffice === 0) {
+        document.getElementById('title').textContent = 'Trump becomes the 47th president today.';
+    } else if (daysInOffice === 1) {
+        document.getElementById('title').textContent = 'Trump has been president since yesterday.';
+    } else {
+        document.getElementById('title').textContent = 'Trump has been president for ' + daysInOffice + ' days.';
+    }
+
+    if (daysInOffice >= 0) {
+        document.getElementById('president').classList.add('checked');
+    }
+</script>
+</body>
+</html>
